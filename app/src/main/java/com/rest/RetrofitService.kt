@@ -13,7 +13,7 @@ interface RetrofitService {
 
     companion object {
 
-        private val retrofitService: RetrofitService by lazy {
+        private val retrofitService : RetrofitService by lazy {
         //by lazy: forma de instanciar o objeto uma vez só e apenas quando ele for utilizado
             val retrofit = Retrofit.Builder()
                 .baseUrl("https://d3c0cr0sze1oo6.cloudfront.net")
@@ -21,6 +21,10 @@ interface RetrofitService {
                 .build()
 
             retrofit.create(RetrofitService::class.java)
+        }
+
+        fun getInstance() : RetrofitService{
+            return retrofitService
         }
     }
 }
