@@ -8,7 +8,9 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class MainViewModel constructor(private val repository: MainRepository) : ViewModel() {
+class MainViewModel constructor(
+    private val repository: MainRepository
+    ) : ViewModel() { //temos argumentos aqui, então precisamos criar o MainViewModelFactory.
 /*extendendo nossa classe viewModel do androidx.lifecycle no nosso proprio MainViewModel*/
 
     val liveList = MutableLiveData<List<Live>>()
