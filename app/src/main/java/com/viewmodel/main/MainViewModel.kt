@@ -1,5 +1,6 @@
 package com.viewmodel.main
 
+import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.models.Live
@@ -23,6 +24,7 @@ class MainViewModel constructor(
             //executando nosso RetrofitService através do repositorio, pra pegar a chamada da API
             override fun onResponse(call: Call<List<Live>>, response: Response<List<Live>>) {
                 //executar quando houver uma resposta
+                Log.i("guga", "onResponse") //2 passa aqui
                 liveList.postValue(response.body())
 
             }
