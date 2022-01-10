@@ -2,7 +2,7 @@
 
   > Status: Finalizado ✔️
   
-  ### Estrturando um simples projeto buscando uma lista de videos(URL) da API aplicando a arquitetura MVVM no programa e Retrofit.
+  ### Estrturando um simples projeto buscando uma lista de videos(URL) da API aplicando a arquitetura MVVM e Retrofit no programa.
   
   <br>
   
