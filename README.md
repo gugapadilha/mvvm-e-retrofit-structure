@@ -10,7 +10,6 @@
    + Kotlin
    + Android 
   
-  
    ### Imagens do projeto:
   
 
