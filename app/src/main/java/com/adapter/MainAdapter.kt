@@ -1,5 +1,6 @@
 package com.adapter
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -14,6 +15,7 @@ class MainAdapter(private val onItemClicked: (Live) -> Unit
 
     private var lives = mutableListOf<Live>()
 
+    @SuppressLint("NotifyDataSetChanged")
     fun setLiveList(lives: List<Live>){
 
         this.lives = lives.toMutableList()
